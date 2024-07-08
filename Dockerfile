@@ -22,5 +22,5 @@ RUN dotnet publish "./TechDictionaryApi.csproj" -c $BUILD_CONFIGURATION -o /app/
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV ASPNETCORE_URLS=http://+:8000
+ENV ASPNETCORE_URLS=http://+:5000
 ENTRYPOINT ["dotnet", "TechDictionaryApi.dll"]
