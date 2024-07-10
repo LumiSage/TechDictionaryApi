@@ -38,4 +38,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: lumisage/dictionary-backend:dev12
+          tags: lumisage/dictionary-backend:dev13
